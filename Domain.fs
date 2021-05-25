@@ -4,6 +4,7 @@ type Undefinied = exn
 
 // types
 
+type Altitude = Undefinied
 type Challenge = Undefinied
 type Clue = Undefinied
 type Distance = Undefinied
@@ -27,3 +28,5 @@ type clue = Clue -> Challenge -> Challenge
 type reward = Reward -> Challenge
 
 type photoWithin = Point -> Distance -> Challenge -> Challenge
+
+type photoAbove = Altitude -> Challenge -> Challenge
