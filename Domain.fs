@@ -9,6 +9,7 @@ type Challenge = Undefinied
 type Clue = Undefinied
 type Distance = Undefinied
 type Input = Undefinied
+type InputFilter = Undefinied
 type Photo = Undefinied
 type Point = Undefinied
 type Reward = Undefinied
@@ -27,6 +28,10 @@ type clue = Clue -> Challenge -> Challenge
 
 type reward = Reward -> Challenge
 
-type photoWithin = Point -> Distance -> Challenge -> Challenge
+type photoWithin = Point -> Distance -> InputFilter
 
-type photoAbove = Altitude -> Challenge -> Challenge
+type photoAbove = Altitude -> InputFilter
+
+type matches = InputFilter -> Input -> bool
+
+type gate = InputFilter -> Challenge -> Challenge
